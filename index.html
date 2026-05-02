@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pancong Nusantara</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#produk">Menu</a>
+  <a href="#Lainnya">Review</a>
+</nav>
+
+<div class="hero" >
+  <h1>Pancong Nusantara</h1>
+  <p>Hangat, Lumer, Bikin Nagih!</p>
+    <a href="https://www.instagram.com/pancongnusantara/" target="_blank">
+      <button type="button">Instagram</button>
+    </a>
+</div>
+
+<div class="container" id="produk">
+  <h2>Menu Favorit</h2>
+  <div class="products">
+
+   <div class="card">
+      <img src="foto/Choco Crunchy.png">
+      <h3>Choco Crunchy</h3>
+      <p class="price">Rp11.000</p>
+      <p>Lumeran cokelat tebal dengan topping crunchy yang bikin tiap gigitan makin nagih. Manisnya pas, teksturnya juara!</p>
+      <button class="menu btn" onclick="order('Choco Crunchy')">Pesan</button>
+    </div>
+
+    <div class="card">
+      <img src="foto/Tiramisu.png" class="img-fluid" alt="...">
+      <h3>Tiramisu Crunchy</h3>
+      <p class="price">Rp11.000</p>
+      <p>Perpaduan creamy tiramisu dengan sentuhan crunchy yang unik. Rasa kopi yang lembut, cocok buat kamu yang pengen manis tapi tetap classy.</p>
+      <button class="menu btn" onclick="order('Tiramisu Crunchy')">Pesan</button>
+    </div>
+
+    <div class="card">
+      <img src="foto/Greentea.png">
+      <h3>Matcha</h3>
+      <p class="price">Rp10.000</p>
+      <p>Matcha premium dengan rasa khas yang lembut dan sedikit pahit elegan. Balance sempurna buat pecinta green tea sejati!</p>
+      <button class="menu btn" onclick="order('Matcha')">Pesan</button>
+    </div>
+
+  </div>
+</div>
+
+<div class="container" id="Lainnya">
+  <h2>Lainnya...</h2>
+  <div class="products">
+
+    <div class="card">
+      <img src="foto/Mitra.png" class="img-fluid" alt="...">
+      <h3>Kemitraan</h3>
+      <p>Peluang Kemitraan Pancong Nusantara 🚀
+
+          Kami membuka program kemitraan untuk kamu yang ingin menjalankan usaha dessert pancong dengan konsep modern, menu fleksibel, dan sistem operasional yang sudah teruji.</p>
+      <button class="btn btn-danger" onclick="order2('Frinchase')">Pesan</button>
+      <a class="katalog btn" href="https://drive.google.com/file/d/1AIyWWGREL7Md6W-unP-K6bXUurzaYLNC/view?usp=drive_link" target="_blank">
+        Katalog
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="foto/Green and White Minimalist Price List (1).png" class="img-fluid">
+      <h3>Wedding Stall</h3>
+      <p>Wedding Dessert Corner — Pancong Nusantara ✨</p>
+      <p>Dessert corner pancong hangat dengan konsep live stall yang fun & interaktif — cocok untuk menambah vibe santai dan seru di acara wedding kamu.</p>
+      <p>Pancong dibuat fresh di tempat, tamu bisa pilih topping favorit, dan disajikan hangat langsung dari stall. Cocok sebagai dessert corner, snack corner, atau late night snack.</p>
+      <button class="btn btn-danger" onclick="order2('Wedding Stall')">Info Lebih Lanjut</button>
+    </div>
+
+    <div class="card">
+      
+      <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 5</div>
+    <img src="foto/Review1.jpeg" style="width:100%">
+    <!-- <div class="text">Caption </div> -->
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 5</div>
+    <img src="foto/Review2.jpeg" style="width:100%">
+    <!-- <div class="text">Caption Two</div> -->
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">3 / 5</div>
+    <img src="foto/Review3.jpeg" style="width:100%">
+    <!-- <div class="text">Caption Two</div> -->
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 5</div>
+    <img src="foto/Review4.jpeg" style="width:100%">
+    <!-- <div class="text">Caption Two</div> -->
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 5</div>
+    <img src="foto/Review5.jpeg" style="width:100%">
+    <!-- <div class="text">Caption Two</div> -->
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+      
+      <!-- <p>Wedding Dessert Corner — Pancong Nusantara ✨</p>
+      <p>Dessert corner pancong hangat dengan konsep live stall yang fun & interaktif — cocok untuk menambah vibe santai dan seru di acara wedding kamu.</p>
+      <p>Pancong dibuat fresh di tempat, tamu bisa pilih topping favorit, dan disajikan hangat langsung dari stall. Cocok sebagai dessert corner, snack corner, atau late night snack.</p> -->
+      <!-- <button class="btn btn-danger" onclick="order2('Wedding Stall')">Info Lebih Lanjut</button> -->
+      <h3 class="Review">Review</h3>
+      <p>Apa kata mereka tentang kami?
+          Dari hal kecil sampai momen besar, kami selalu berusaha kasih rasa terbaik dan berkesan.</p>
+    </div>
+
+  </div>
+  
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- KOLOM 1 -->
+    <div class="footer-col">
+      <img src="foto/logo pancong nusantara png.png" class="logo">
+      <img src="foto/Logo Halal.jpeg" class="logo-halal">
+
+      
+    </div>
+
+    <!-- KOLOM 2 -->
+    <div class="footer-col">
+
+      <div class="social">
+        <a href="https://www.instagram.com/pancongnusantara/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"></a>
+        <a href="https://www.tiktok.com/@pancongnusantara" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Tiktok_icon.svg"></a>
+      </div>
+
+      <div class="kritik">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf6VUI88Wc7vYmdZketW4ARKKUF3NztXqSfnKMM-snCeERU8g/viewform?usp=sharing&ouid=107319041925817673831" target="_blank">
+          <p><strong>Kritik & Saran</strong></p>
+        </a>
+        <p>pancongnusantaraa@gmail.com</p>
+      </div>
+
+      <div class="social">
+        <p><strong>Alamat:</strong></p>
+       <p>Kahuripan Nirwana, Sidoarjo, Jawa Timur</p>
+      </div>
+    </div>
+
+
+    <!-- KOLOM 3 -->
+    <div class="footer-col">
+      <p class="map-title">Temukan kami:</p>
+      <div class="map">
+        <iframe 
+          src="https://www.google.com/maps/embed/v1/place?q=pancong%20nusantara&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2023 Pancong Nusantara</p>
+  </div>
+</footer>
+
+<div class="wa-btn" onclick="order('Pancong')"><i class="fa fa-whatsapp" style="font-size:30px"></i></div>
+
+<script>
+function order(product) {
+  const phone = '6288991473289';
+  const text = `Halo, saya mau pesan ${product}`;
+  window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`);
+}
+</script>
+
+<script>
+function order2(product) {
+  const phone = '6288991473289';
+  const text = `Tanya dong tentang ${product}`;
+  window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`);
+}
+
+
+</script>
+
+<script src="js/javascript.js"></script>
+</body>
+</html>
