@@ -318,6 +318,32 @@ a{
   margin-bottom: 20px;
 }
 
+.social {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-item {
+  display: flex;
+  align-items: center; /* ini kunci biar center vertikal */
+  gap: 12px;
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.social-item span {
+  position: relative;
+  top: -10px; /* naik sedikit biar pas tengah */
+  font-size: 16px;
+}
+
+.social-item img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
 /* LINKS */
 /* .footer-links {
   display: flex;
