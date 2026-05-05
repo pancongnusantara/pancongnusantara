@@ -323,16 +323,19 @@ document.getElementById("orderForm")
   // KIRIM KE SPREADSHEET
   // =====================
   fetch(scriptURL, {
-    method: "POST",
-    body: JSON.stringify(data)
-  })
-  .then(res => res.json())
-  .then(response => {
-    
-  })
-  .catch(error => {
-    alert("Gagal kirim ke spreadsheet");
-  });
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(data),
+  mode: "no-cors"
+    })
+    .then(() => {
+      console.log("Berhasil kirim ke spreadsheet");
+    })
+    .catch(error => {
+      alert("Gagal kirim ke spreadsheet");
+    });
 
   // =====================
   // TETAP KIRIM KE WA
